@@ -84,7 +84,7 @@ export default function Contact() {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email",
       value: "ravinder92809@gmail.com",
-      link: "ravinder92809@gmail.com",
+      link: "mailto:ravinder92809@gmail.com",
     },
     {
       icon: <LinkedinIcon className="h-6 w-6 text-primary" />,
