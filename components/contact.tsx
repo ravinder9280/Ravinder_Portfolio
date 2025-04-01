@@ -16,7 +16,7 @@ export default function Contact() {
     name: "",
     email: "",
     subject: "",
-    message: "",
+    msg: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -34,21 +34,50 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
   
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch("/api/sendMessage", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          msg: formData.msg,
+        }),
+      });
   
-    toast({
-      title: "Message sent!",
-      description: "Thank you for your message. I'll get back to you soon.",
-    });
+      const result = await response.json();
   
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-    setIsSubmitting(false);
+      if (response.ok) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+  
+        // Reset form fields
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          msg: "",
+        });
+      } else {
+        toast({
+          title: "Error",
+          description: result.message || "Failed to send the message. Please try again.",
+        });
+      }
+    } catch (error) {
+      console.error("Error submitting the form:", error);
+      toast({
+        title: "Error",
+        description: "An unexpected error occurred. Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   const contactInfo = [
     {
@@ -60,7 +89,7 @@ export default function Contact() {
     {
       icon: <LinkedinIcon className="h-6 w-6 text-primary" />,
       title: "LinkedIn",
-      value: "https://www.linkedin.com/in/ravinder92809",
+      value: "ravinder92809",
       link: "https://www.linkedin.com/in/ravinder92809/",
     },
     {
@@ -141,10 +170,10 @@ export default function Contact() {
                     <Label htmlFor="message">Message</Label>
                     <Textarea
                       id="message"
-                      name="message"
+                      name="msg"
                       placeholder="I'd like to discuss a project..."
                       rows={6}
-                      value={formData.message}
+                      value={formData.msg}
                       onChange={handleChange}
                       required
                     />
@@ -207,7 +236,7 @@ export default function Contact() {
                       asChild
                     >
                       <a
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/in/ravinder92809/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -221,7 +250,7 @@ export default function Contact() {
                       asChild
                     >
                       <a
-                        href="https://twitter.com"
+                        href="https://x.com/Ravinder387573"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -235,7 +264,7 @@ export default function Contact() {
                       asChild
                     >
                       <a
-                        href="https://github.com"
+                        href="https://github.com/ravinder9280"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
