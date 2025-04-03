@@ -47,7 +47,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <button onClick={() => scrollToSection("home")} className="text-2xl font-bold text-primary">
+          <button onClick={() => scrollToSection("home")} className="text-2xl hover:bg-white/10 rounded  font-bold text-primary">
             Ravinder
           </button>
 
