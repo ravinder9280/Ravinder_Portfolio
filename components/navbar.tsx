@@ -62,7 +62,16 @@ export default function Navbar() {
                 {link.name}
               </button>
             ))}
-            <Button>Resume</Button>
+            <Button
+             onClick={() => {
+              const link = document.createElement("a");
+              link.href = "/Ravinder.ResumeV2.pdf"; // Path to your resume file
+              link.download = "Ravinder.Resume.pdf"; // Suggested file name for download
+              link.click();
+            }}
+            
+            
+            >Resume</Button>
           </nav>
 
           {/* Mobile Navigation Toggle */}
@@ -86,7 +95,16 @@ export default function Navbar() {
                   {link.name}
                 </button>
               ))}
-              <Button className="w-full">Resume</Button>
+              <Button
+              
+              
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = "/Ravinder.ResumeV2.pdf"; // Path to your resume file
+                link.download = "Ravinder.Resume.pdf"; // Suggested file name for download
+                link.click();
+              }}
+              className="w-full">Resume</Button>
             </nav>
           </div>
         </div>
