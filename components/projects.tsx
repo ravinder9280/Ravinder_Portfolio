@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { ExternalLink, Github, ChevronDown } from "lucide-react"
-
+import projectsData from "@/lib/constant/projects.json"
 // Define the type for a project
 interface Project {
   id: number
@@ -32,59 +32,7 @@ export default function Projects() {
     visible: { opacity: 1, y: 0 },
   }
 
-  const projects: Project[] = [
-    {
-      id: 1,
-      title: "Professional AI Mentor (FanseMentor)",
-      shortDescription: "Your AI Career Coach for Professional Success With features Like Real Time Industry Insights ,Resume Builder, Interview Prepration and more",
-      description: "a Vercel Overview : Developed Fans-E-Mentor, an AI-powered platform connecting to professionals AI Mentors and Practice Interview Question and keep track of progress and Industry Trend. Utilized React, Next.js, TailwindCSS, PostgreSQL, and PrismaORM. Implemented AI-driven matching and deployed on Vercel. ",
-      image: "/fansementor.png",
-      tags: ["NextJS", "Javascript", "TailwindCSS", "ShadcnUI", "PostgreSQL", "PrsimaORM", "Clerk","GeminiAPI"],
-      features: [
-        "Real-time Industry Insights",
-        "Interview Preparation",
-        "AI Resume Builder",
-        "Cover Letter Generator",
-        "Progress tracking",
-      ],
-      liveLink: "https://fansementor.vercel.app/",
-      githubLink: "https://github.com/ravinder9280/fansementor",
-      fullDescription: "Developed Fans-E-Mentor, an AI-powered platform connecting to professionals AI Mentors and Practice Interview Question and keep track of progress and Industry Trend. Utilized React, Next.js, TailwindCSS, PostgreSQL, and PrismaORM. Implemented AI-driven matching and deployed on Vercel. ",
-    },
-    {
-      id: 2,
-      title: "Chatty AI",
-      shortDescription: "Discover & Share The Future of Ai Through Chatty.",
-      description: "Discover & Share The Future of Ai Through Chatty.",
-      image: "/chattyai.png",
-      tags: ["NextJS", "TailwindCSS", "Javascript", "GeminiAPI","MongoDB","Clerk"],
-      features: ["  User Generated Prompts For better AI Interaction", "Playground Section To Test Prompts Accuracy", "CRUD Operation", "User Progress", "Responsive Design"],
-      liveLink: "https://chatty-ai-web.vercel.app",
-      githubLink: "#",
-      fullDescription:
-"Chatty is a platform to create, explore, and share pre-made prompts for better AI interactions. It offers a growing library of user-generated prompts to ensure accuracy and efficiency. Save time, refine ideas, and  Playground Section to test Prompts enhance your AI experience with Chatty—a hub for smarter, collaborative prompt crafting. "    },
-    {
-      id: 3,
-      title: "FanseStore",
-      shortDescription: "A full-featured e-commerce platform with product management.",
-      description:
-        "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
-      image: "/fansestore.png",
-      tags: ["ReactJS", "TailwindCSS", "NodeJS", "ExpressJS", "Javascript", "MongoDB", "Cloudinary"],
-      features: [
-        "Inventory management system",
-        "Real-time stock tracking",
-        "Secure payment processing",
-        "Order management dashboard",
-        "Customer analytics",
-      ],
-      liveLink: "https://fansestore.netlify.app/",
-      githubLink: "https://github.com/ravinder9280/fans-e-store",
-      fullDescription:
-        "This e-commerce platform provides businesses with a complete solution for selling products online. Built with ReactJS and Nodejs for high performance and cross-platform compatibility. Features include a responsive design With TailwindCSS, product catalog with filtering and search capabilities, shopping cart functionality, secure checkout integration, user authentication, and an admin dashboard for managing products, orders, and customers.",
-    },
-  ]
-
+  const projects: Project[] = projectsData
   return (
     <section id="projects" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -249,7 +197,7 @@ export default function Projects() {
                   </a>
                 </Button>
                 <Button asChild>
-                  <a href={selectedProject.demoLink} target="_blank" rel="noopener noreferrer">
+                  <a href={selectedProject.liveLink} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="h-4 w-4 mr-2" />
                     Live Demo
                   </a>

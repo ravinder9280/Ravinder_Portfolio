@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "title": "Professional AI Mentor (FanseMentor)",
+    "shortDescription": "Your AI Career Coach for Professional Success With features Like Real Time Industry Insights ,Resume Builder, Interview Prepration and more",
+    "description": "a Vercel Overview : Developed Fans-E-Mentor, an AI-powered platform connecting to professionals AI Mentors and Practice Interview Question and keep track of progress and Industry Trend. Utilized React, Next.js, TailwindCSS, PostgreSQL, and PrismaORM. Implemented AI-driven matching and deployed on Vercel. ",
+    "image": "/fansementor.png",
+    "tags": [
+      "NextJS",
+      "Javascript",
+      "TailwindCSS",
+      "ShadcnUI",
+      "PostgreSQL",
+      "PrsimaORM",
+      "Clerk",
+      "GeminiAPI"
+    ],
+    "features": [
+      "Real-time Industry Insights",
+      "Interview Preparation",
+      "AI Resume Builder",
+      "Cover Letter Generator",
+      "Progress tracking"
+    ],
+    "liveLink": "https://fansementor.vercel.app/",
+    "githubLink": "https://github.com/ravinder9280/fansementor",
+    "fullDescription": "Developed Fans-E-Mentor, an AI-powered platform connecting to professionals AI Mentors and Practice Interview Question and keep track of progress and Industry Trend. Utilized React, Next.js, TailwindCSS, PostgreSQL, and PrismaORM. Implemented AI-driven matching and deployed on Vercel. "
+  },
+  {
+    "id": 2,
+    "title": "Fix-It",
+    "shortDescription": "Say goodbye to grammatical errors. Our AI-powered software analyzes your text, correcting grammar, punctuation, and style mistakes with unparalleled accuracy. Write with confidence and clarity.",
+    "description": "Say goodbye to grammatical errors. Our AI-powered software analyzes your text, correcting grammar, punctuation, and style mistakes with unparalleled accuracy. Write with confidence and clarity.",
+    "image": "/fixitai.png",
+    "tags": [
+      "NextJS",
+      "TailwindCSS",
+      "Typescript",
+      "GeminiAPI",
+      "PostgreSQL",
+      "Clerk"
+    ],
+    "features": [
+      "AI-powered grammar correction",
+      "Generate Different Tones",
+      "Confidence boost. ",
+      "Humanizer",
+      "Prompt Generator"
+    ],
+    "liveLink": "https://fix-it-iota.vercel.app",
+    "githubLink": "https://github.com/ravinder9280/fix-it",
+    "fullDescription": "Fix-It AI is an AI-powered software that analyzes your text, correcting grammar, punctuation, and style mistakes with unparalleled accuracy. Write with confidence and clarity."
+  },
+  {
+    "id": 3,
+    "title": "FanseStore",
+    "shortDescription": "A full-featured e-commerce platform with product management.",
+    "description": "A full-featured e-commerce platform with product management, cart functionality, and payment processing.",
+    "image": "/fansestore.png",
+    "tags": [
+      "ReactJS",
+      "TailwindCSS",
+      "NodeJS",
+      "ExpressJS",
+      "Javascript",
+      "MongoDB",
+      "Cloudinary"
+    ],
+    "features": [
+      "Inventory management system",
+      "Real-time stock tracking",
+      "Secure payment processing",
+      "Order management dashboard",
+      "Customer analytics"
+    ],
+    "liveLink": "https://fansestore.netlify.app/",
+    "githubLink": "https://github.com/ravinder9280/fans-e-store",
+    "fullDescription": "This e-commerce platform provides businesses with a complete solution for selling products online. Built with ReactJS and Nodejs for high performance and cross-platform compatibility. Features include a responsive design With TailwindCSS, product catalog with filtering and search capabilities, shopping cart functionality, secure checkout integration, user authentication, and an admin dashboard for managing products, orders, and customers."
+  }
+]
