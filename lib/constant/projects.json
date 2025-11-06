@@ -1,4 +1,34 @@
 [
+ {
+  "id": 0,
+  "title": "RidePlus",
+  "shortDescription": "A ride-sharing platform that connects people. Users can book or offer rides through verified profiles, save money, and connect with fellow travelers.",
+  "description": "Developed RidePlus, a full-stack Ride Sharing platform built with Next.js, TailwindCSS, PostgreSQL, and PrismaORM. Features include AI-based ride discovery, Mapbox-powered location search, secure authentication via Clerk, and privacy-safe communication between users. Deployed on Vercel for scalability and performance.",
+  "image": "/rideplus.png",
+  "tags": [
+    "NextJS",
+    "TypeScript",
+    "TailwindCSS",
+    "ShadcnUI",
+    "PostgreSQL",
+    "PrismaORM",
+    "Clerk",
+    "Mapbox",
+    "Resend"
+  ],
+  "features": [
+    "Location-based ride search",
+    "Ride publishing and seat requests",
+    "Secure user verification with Clerk",
+    "In-app notifications and email alerts",
+        "AI-powered ride recommendations"
+
+  ],
+  "liveLink": "https://rideplus.ravinder-dev.tech",
+  "githubLink": "https://github.com/ravinder9280/rideplus",
+  "fullDescription": "RidePlus is a Next.js-based Ride Sharing platform enabling users to publish or Join rides, search nearby routes, and request seats securely. Integrated with Prisma and PostgreSQL for robust data management, Clerk for authentication, and Mapbox for geolocation. It features AI-assisted suggestions, verified user connections, and a privacy-first design to simplify daily commuting."
+}
+,
   {
     "id": 1,
     "title": "Professional AI Mentor (FanseMentor)",

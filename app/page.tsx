@@ -6,6 +6,7 @@ import Projects from "@/components/projects"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import Navbar from "@/components/navbar"
+import Experience from "@/components/experience"
 
 export const metadata: Metadata = {
   title: "Ravinder| Portfolio",
@@ -19,6 +20,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <Experience/>
 
         
             <TechStack />

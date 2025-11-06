@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Github, Linkedin, Twitter } from "lucide-react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export default function Hero() {
   const [text, setText] = useState("")
@@ -37,7 +38,7 @@ export default function Hero() {
   return (
     <section id="home" className=" pt-32 pb-20 md:pt-40 md:pb-32">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="flex justify-between gap-12 items-center ">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               Hi, I'm <span className="text-[#00FF9C]">Ravinder</span>
@@ -80,21 +81,38 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative aspect-square max-w-md mx-auto"
+            className="relative aspect-square max-w-md "
           >
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full"></div>
             <div className="absolute inset-4 bg-muted rounded-full overflow-hidden">
               <img
-                src="/placeholder.svg?height=400&width=400"
+                src="/image.jpeg?height=400&width=400"
                 alt="Ravinder"
                 className="w-full h-full object-cover"
               />
             </div>
-          </motion.div>
+          </motion.div> */}
+          
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          
+            className="max-w-[400px] bg-muted ring-4 ring-primary/50 hidden md:block rounded-full overflow-hidden">
+
+            
+              <Image
+                src="/image.jpeg"
+              alt="Ravinder"
+              height={400}
+              width={400}
+                className="h-full w-full object-cover"
+              />
+            </motion.div>
         </div>
       </div>
 

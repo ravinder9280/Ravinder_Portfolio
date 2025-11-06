@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -33,6 +34,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "home" },
     { name: "About", href: "about" },
+    { name: "Experience", href: "experience" },
     { name: "Tech Stack", href: "tech-stack" },
     { name: "Projects", href: "projects" },
     { name: "Contact", href: "contact" },
@@ -57,21 +59,21 @@ export default function Navbar() {
               <button
                 key={link.name}
                 onClick={() => scrollToSection(link.href)}
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-foreground whitespace-nowrap transition-colors"
               >
                 {link.name}
               </button>
             ))}
             <Button
-             onClick={() => {
-              const link = document.createElement("a");
-              link.href = "/Ravinder.ResumeV2.pdf"; // Path to your resume file
-              link.download = "Ravinder.Resume.pdf"; // Suggested file name for download
-              link.click();
-            }}
-            
-            
-            >Resume</Button>
+
+
+
+              className="w-full" asChild>
+              <Link href={'https://drive.google.com/file/d/1g2W5__FwCd4dNOaC0smRF3n0OgTRKD6n/view?usp=sharing'}>
+
+              Resume
+              </Link>
+            </Button>
           </nav>
 
           {/* Mobile Navigation Toggle */}
@@ -90,7 +92,7 @@ export default function Navbar() {
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-muted-foreground hover:text-foreground transition-colors py-2 text-left"
+                  className="text-muted-foreground hover:text-foreground  transition-colors py-2 text-left"
                 >
                   {link.name}
                 </button>
@@ -98,13 +100,13 @@ export default function Navbar() {
               <Button
               
               
-              onClick={() => {
-                const link = document.createElement("a");
-                link.href = "/Ravinder.ResumeV2.pdf"; // Path to your resume file
-                link.download = "Ravinder.Resume.pdf"; // Suggested file name for download
-                link.click();
-              }}
-              className="w-full">Resume</Button>
+            
+                className="w-full" asChild>
+                <Link href={'https://drive.google.com/file/d/1g2W5__FwCd4dNOaC0smRF3n0OgTRKD6n/view?usp=sharing'}>
+                
+                Resume
+                </Link>
+              </Button>
             </nav>
           </div>
         </div>
