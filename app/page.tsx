@@ -20,12 +20,13 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <Experience/>
 
         
             <TechStack />
           
         <Projects />
+        <Experience/>
+
         <Contact />
       </main>
       <Footer />
