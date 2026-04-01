@@ -9,10 +9,17 @@ import Navbar from "@/components/navbar"
 import Experience from "@/components/experience"
 
 export const metadata: Metadata = {
-  title: "Ravinder| Portfolio",
-  description: "Professional portfolio of MemoryLeaked - Software Developer",
+  title: "Ravinder9280 | Full Stack Developer Portfolio",
+  description:
+    "Ravinder9280 (Ravinder Kumar) - Full Stack Developer specializing in Next.js, React, Node.js, and AI-powered applications. Explore projects, experience, and contact details.",
+  keywords: [
+    "Ravinder9280",
+    "Ravinder Kumar",
+    "ravinder9280 github",
+    "Ravinder developer",
+    "full stack developer ravinder",
+  ],
 }
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
@@ -21,10 +28,10 @@ export default function Home() {
         <Hero />
         <About />
 
-        
-            <TechStack />
-          
-        <Experience/>
+
+        <TechStack />
+
+        <Experience />
         <Projects />
 
         <Contact />
