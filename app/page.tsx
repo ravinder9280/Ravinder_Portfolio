@@ -24,8 +24,8 @@ export default function Home() {
         
             <TechStack />
           
-        <Projects />
         <Experience/>
+        <Projects />
 
         <Contact />
       </main>

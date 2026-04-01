@@ -8,18 +8,24 @@ const ExperienceData = [
     {
         Role: "Frontend Developer Intern",
         Company: "Natplus",
-        Period: "June 2025 - Nov 2025",
+        Period: "June 2025 - March 2026",
         Link: "https://natplus.io",
         location: "Remote",
         Summaries: [
-            `Developed Multiple Features and optimized web applications using Next.js, Nodejs ,TypeScript, Tailwind CSS,
-            and PostgreSQL, ensuring high performance and scalability.`,
-            `Implemented an interactive map feature to visualize company data, improved responsiveness across devices, and resolved major UI issues and functional errors.`,
-            `Deployed Applications On Cloud Using Docker ,Nginx,Certbot`
+            `Built and worked the entire platform including frontend, backend, API layer, Database`,
+` Implemented an interactive Geospatial analysis feature using Mapbox to visualize assets, priority sites, and
+biodiversity data with dynamic filtering and contextual insights.`,
+` Developed an AI-powered data enrichment feature for team to generate and auto-fill structured table data using
+Natural language prompts.`,
+` Participated in end-to-end product development, contributing to feature design, implementation, and continuous
+improvement of the platform.`,
+` Improved application responsiveness and resolved critical UI issues, ensuring a seamless and consistent user experience
+across devices`
         ],
         Technologies: [
             "Next.js",
             "Nodejs",
+            "Mapbox",
             "TypeScript",
             "Tailwind CSS",
             "PostgreSQL",
