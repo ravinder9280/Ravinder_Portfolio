@@ -18,6 +18,26 @@ export const metadata: Metadata = {
     "ravinder9280 github",
     "Ravinder developer",
     "full stack developer ravinder",
+    "ravindertech.me",
+    "ravindertech.me portfolio",
+    "ravindertech.me projects",
+    "ravindertech.me experience",
+    "ravindertech.me contact",
+    "ravindertech.me blog",
+    "ravindertech.me resume",
+    "ravindertech.me linkedin",
+    "ravindertech.me github",
+    "www.ravindertech.me",
+    "www.ravindertech.me portfolio",
+    "www.ravindertech.me projects",
+    "www.ravindertech.me projects",
+    "www.ravindertech.me experience",
+    "www.ravindertech.me contact",
+    "www.ravindertech.me blog",
+    "www.ravindertech.me resume",
+    "www.ravindertech.me linkedin",
+    "www.ravindertech.me github",
+
   ],
 }
 export default function Home() {
@@ -27,13 +47,9 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-
-
         <TechStack />
-
         <Experience />
         <Projects />
-
         <Contact />
       </main>
       <Footer />
